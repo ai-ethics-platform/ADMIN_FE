@@ -2,6 +2,16 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { apiPost } from '../api/client'
 import { useAuth } from '../auth/AuthContext'
+import { Button } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 
 export default function Login() {
   const [password, setPassword] = useState('')
@@ -26,20 +36,36 @@ export default function Login() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>딜레마 만들기 어드민</h1>
-      <label htmlFor="password">비밀번호</label>
-      <input
-        id="password"
-        type="password"
-        value={password}
-        onChange={(event) => setPassword(event.target.value)}
-        required
-      />
-      {error && <p role="alert">{error}</p>}
-      <button type="submit" disabled={submitting}>
-        로그인
-      </button>
-    </form>
+    <div className="flex min-h-svh items-center justify-center bg-muted/40 p-6">
+      <Card className="w-full max-w-sm">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <CardHeader>
+            <CardTitle>
+              <h1>딜레마 만들기 어드민</h1>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-col gap-2">
+            <Label htmlFor="password">비밀번호</Label>
+            <Input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              required
+            />
+            {error && (
+              <p role="alert" className="text-sm text-destructive">
+                {error}
+              </p>
+            )}
+          </CardContent>
+          <CardFooter>
+            <Button type="submit" disabled={submitting} className="w-full">
+              로그인
+            </Button>
+          </CardFooter>
+        </form>
+      </Card>
+    </div>
   )
 }

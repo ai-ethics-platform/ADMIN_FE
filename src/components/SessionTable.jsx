@@ -1,3 +1,22 @@
+import { Button } from '@/components/ui/button'
+import { Checkbox } from '@/components/ui/checkbox'
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from '@/components/ui/pagination'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
+
 function formatDateTime(value) {
   if (!value) return '—'
   return new Date(value).toLocaleString('ko-KR')
@@ -12,38 +31,58 @@ function formatDuration(seconds) {
   return `${pad(h)}:${pad(m)}:${pad(s)}`
 }
 
-function Pagination({ page, pageSize, total, onPageChange }) {
+function TablePagination({ page, pageSize, total, onPageChange }) {
   const totalPages = Math.max(1, Math.ceil(total / pageSize))
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
+  const isFirstPage = page <= 1
+  const isLastPage = page >= totalPages
 
   return (
-    <div>
-      <button
-        type="button"
-        onClick={() => onPageChange(page - 1)}
-        disabled={page <= 1}
-      >
-        이전
-      </button>
-      {pages.map((pageNumber) => (
-        <button
-          key={pageNumber}
-          type="button"
-          onClick={() => onPageChange(pageNumber)}
-          disabled={pageNumber === page}
-          aria-current={pageNumber === page ? 'page' : undefined}
-        >
-          {pageNumber}
-        </button>
-      ))}
-      <button
-        type="button"
-        onClick={() => onPageChange(page + 1)}
-        disabled={page >= totalPages}
-      >
-        다음
-      </button>
-    </div>
+    <Pagination>
+      <PaginationContent>
+        <PaginationItem>
+          <PaginationPrevious
+            href="#"
+            text="이전"
+            aria-label="이전 페이지"
+            aria-disabled={isFirstPage}
+            className={isFirstPage ? 'pointer-events-none opacity-50' : undefined}
+            onClick={(event) => {
+              event.preventDefault()
+              if (!isFirstPage) onPageChange(page - 1)
+            }}
+          />
+        </PaginationItem>
+        {pages.map((pageNumber) => (
+          <PaginationItem key={pageNumber}>
+            <PaginationLink
+              href="#"
+              isActive={pageNumber === page}
+              aria-label={`${pageNumber} 페이지`}
+              onClick={(event) => {
+                event.preventDefault()
+                onPageChange(pageNumber)
+              }}
+            >
+              {pageNumber}
+            </PaginationLink>
+          </PaginationItem>
+        ))}
+        <PaginationItem>
+          <PaginationNext
+            href="#"
+            text="다음"
+            aria-label="다음 페이지"
+            aria-disabled={isLastPage}
+            className={isLastPage ? 'pointer-events-none opacity-50' : undefined}
+            onClick={(event) => {
+              event.preventDefault()
+              if (!isLastPage) onPageChange(page + 1)
+            }}
+          />
+        </PaginationItem>
+      </PaginationContent>
+    </Pagination>
   )
 }
 
@@ -61,77 +100,91 @@ export default function SessionTable({
   const allSelected = items.length > 0 && items.every((item) => selectedIds.has(item.id))
 
   return (
-    <div>
-      <div style={{ overflowX: 'auto' }}>
-        <table>
-          <thead>
-            <tr>
-              <th>
-                <input
-                  type="checkbox"
+    <div className="flex flex-col gap-4">
+      <div className="overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10">
+        <Table>
+          <TableHeader>
+            <TableRow className="bg-muted/50">
+              <TableHead className="w-12 pl-4">
+                <Checkbox
                   aria-label="전체 선택"
                   checked={allSelected}
-                  onChange={(event) => onToggleSelectAll(event.target.checked)}
+                  onCheckedChange={(checked) => onToggleSelectAll(checked)}
                 />
-              </th>
-              <th>No.</th>
-              <th>이름</th>
-              <th>근무지</th>
-              <th>이메일</th>
-              <th>대화시작시간</th>
-              <th>대화마무리시간</th>
-              <th>대화지속시간</th>
-              <th>최종게임링크</th>
-              <th>로그</th>
-            </tr>
-          </thead>
-          <tbody>
+              </TableHead>
+              <TableHead className="w-14">No.</TableHead>
+              <TableHead>이름</TableHead>
+              <TableHead>근무지</TableHead>
+              <TableHead>이메일</TableHead>
+              <TableHead>대화시작시간</TableHead>
+              <TableHead>대화마무리시간</TableHead>
+              <TableHead>대화지속시간</TableHead>
+              <TableHead>최종게임링크</TableHead>
+              <TableHead className="pr-4">로그</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {items.map((item, index) => (
-              <tr key={item.id}>
-                <td>
-                  <input
-                    type="checkbox"
+              <TableRow
+                key={item.id}
+                data-state={selectedIds.has(item.id) ? 'selected' : undefined}
+              >
+                <TableCell className="pl-4">
+                  <Checkbox
                     aria-label={`${item.teacher_name} 선택`}
                     checked={selectedIds.has(item.id)}
-                    onChange={() => onToggleSelect(item.id)}
+                    onCheckedChange={() => onToggleSelect(item.id)}
                   />
-                </td>
-                <td>{(page - 1) * pageSize + index + 1}</td>
-                <td>{item.teacher_name}</td>
-                <td>{item.teacher_school}</td>
-                <td>{item.teacher_email}</td>
-                <td>{formatDateTime(item.started_at)}</td>
-                <td>{formatDateTime(item.ended_at)}</td>
-                <td>{formatDuration(item.duration_seconds)}</td>
-                <td>
+                </TableCell>
+                <TableCell className="text-muted-foreground tabular-nums">
+                  {(page - 1) * pageSize + index + 1}
+                </TableCell>
+                <TableCell className="font-medium">{item.teacher_name}</TableCell>
+                <TableCell>{item.teacher_school}</TableCell>
+                <TableCell className="text-muted-foreground">
+                  {item.teacher_email}
+                </TableCell>
+                <TableCell className="tabular-nums">
+                  {formatDateTime(item.started_at)}
+                </TableCell>
+                <TableCell className="tabular-nums">
+                  {formatDateTime(item.ended_at)}
+                </TableCell>
+                <TableCell className="tabular-nums">
+                  {formatDuration(item.duration_seconds)}
+                </TableCell>
+                <TableCell>
                   {item.game_url ? (
                     <a
                       href={item.game_url}
                       target="_blank"
                       rel="noreferrer"
                       aria-label={`${item.teacher_name}의 게임 링크 (새 탭에서 열림)`}
+                      className="font-medium text-primary underline-offset-4 hover:underline"
                     >
                       링크
                     </a>
                   ) : (
-                    '—'
+                    <span className="text-muted-foreground">—</span>
                   )}
-                </td>
-                <td>
-                  <button
+                </TableCell>
+                <TableCell className="pr-4">
+                  <Button
                     type="button"
+                    variant="outline"
+                    size="sm"
                     onClick={() => onOpenDetail(item.id)}
                     aria-label={`${item.teacher_name} 세션 로그 보기`}
                   >
                     Log
-                  </button>
-                </td>
-              </tr>
+                  </Button>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
-      <Pagination
+      <TablePagination
         page={page}
         pageSize={pageSize}
         total={total}

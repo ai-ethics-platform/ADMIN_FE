@@ -1,3 +1,13 @@
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+
 const SORT_OPTIONS = [
   { value: 'started_at:desc', label: '대화시작시간 (최신순)' },
   { value: 'started_at:asc', label: '대화시작시간 (오래된순)' },
@@ -21,16 +31,16 @@ export default function SessionFilters({ filters, onFilterChange }) {
     onFilterChange({ endDate: event.target.value })
   }
 
-  function handleSortChange(event) {
-    const [nextSortBy, nextSortDir] = event.target.value.split(':')
+  function handleSortChange(value) {
+    const [nextSortBy, nextSortDir] = value.split(':')
     onFilterChange({ sortBy: nextSortBy, sortDir: nextSortDir })
   }
 
   return (
-    <div>
-      <div>
-        <label htmlFor="session-search">검색</label>
-        <input
+    <div className="grid gap-4 rounded-xl bg-card p-4 ring-1 ring-foreground/10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="flex min-w-0 flex-col gap-2">
+        <Label htmlFor="session-search">검색</Label>
+        <Input
           id="session-search"
           type="text"
           value={search}
@@ -38,33 +48,42 @@ export default function SessionFilters({ filters, onFilterChange }) {
           placeholder="이름, 이메일, 근무지로 검색"
         />
       </div>
-      <div>
-        <label htmlFor="session-start-date">시작일</label>
-        <input
+      <div className="flex min-w-0 flex-col gap-2">
+        <Label htmlFor="session-start-date">시작일</Label>
+        <Input
           id="session-start-date"
           type="date"
           value={startDate}
           onChange={handleStartDateChange}
         />
       </div>
-      <div>
-        <label htmlFor="session-end-date">종료일</label>
-        <input
+      <div className="flex min-w-0 flex-col gap-2">
+        <Label htmlFor="session-end-date">종료일</Label>
+        <Input
           id="session-end-date"
           type="date"
           value={endDate}
           onChange={handleEndDateChange}
         />
       </div>
-      <div>
-        <label htmlFor="session-sort">정렬</label>
-        <select id="session-sort" value={sortValue} onChange={handleSortChange}>
-          {SORT_OPTIONS.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
+      <div className="flex min-w-0 flex-col gap-2">
+        <Label htmlFor="session-sort">정렬</Label>
+        <Select
+          items={SORT_OPTIONS}
+          value={sortValue}
+          onValueChange={handleSortChange}
+        >
+          <SelectTrigger id="session-sort" className="w-full">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {SORT_OPTIONS.map((option) => (
+              <SelectItem key={option.value} value={option.value}>
+                {option.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
       </div>
     </div>
   )

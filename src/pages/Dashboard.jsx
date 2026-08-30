@@ -65,27 +65,37 @@ export default function Dashboard() {
   }, [filters])
 
   return (
-    <div>
-      <h1>세션 로그</h1>
-      <SessionFilters filters={filters} onFilterChange={handleFilterChange} />
-      <ExportBar selectedIds={selectedIds} filterQueryString={filterQueryString} />
-      {loading && <p>불러오는 중...</p>}
-      {error && <p role="alert">목록을 불러오지 못했습니다</p>}
-      <SessionTable
-        items={items}
-        selectedIds={selectedIds}
-        onToggleSelect={handleToggleSelect}
-        onToggleSelectAll={handleToggleSelectAll}
-        onOpenDetail={setDetailSessionId}
-        page={page}
-        pageSize={PAGE_SIZE}
-        total={total}
-        onPageChange={setPage}
-      />
-      <SessionDetailModal
-        sessionId={detailSessionId}
-        onClose={() => setDetailSessionId(null)}
-      />
+    <div className="min-h-svh bg-muted/40">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 p-6">
+        <h1 className="font-heading text-2xl font-semibold tracking-tight">
+          세션 로그
+        </h1>
+        <SessionFilters filters={filters} onFilterChange={handleFilterChange} />
+        <ExportBar selectedIds={selectedIds} filterQueryString={filterQueryString} />
+        {loading && (
+          <p className="text-sm text-muted-foreground">불러오는 중...</p>
+        )}
+        {error && (
+          <p role="alert" className="text-sm text-destructive">
+            목록을 불러오지 못했습니다
+          </p>
+        )}
+        <SessionTable
+          items={items}
+          selectedIds={selectedIds}
+          onToggleSelect={handleToggleSelect}
+          onToggleSelectAll={handleToggleSelectAll}
+          onOpenDetail={setDetailSessionId}
+          page={page}
+          pageSize={PAGE_SIZE}
+          total={total}
+          onPageChange={setPage}
+        />
+        <SessionDetailModal
+          sessionId={detailSessionId}
+          onClose={() => setDetailSessionId(null)}
+        />
+      </div>
     </div>
   )
 }
