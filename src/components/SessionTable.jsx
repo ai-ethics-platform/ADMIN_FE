@@ -22,6 +22,11 @@ function formatDateTime(value) {
   return new Date(value).toLocaleString('ko-KR')
 }
 
+function formatCount(value) {
+  if (value === null || value === undefined) return '—'
+  return value
+}
+
 function formatDuration(seconds) {
   if (seconds === null || seconds === undefined) return '—'
   const pad = (n) => String(n).padStart(2, '0')
@@ -116,6 +121,7 @@ export default function SessionTable({
               <TableHead>이름</TableHead>
               <TableHead>근무지</TableHead>
               <TableHead>이메일</TableHead>
+              <TableHead>턴테이킹수</TableHead>
               <TableHead>대화시작시간</TableHead>
               <TableHead>대화마무리시간</TableHead>
               <TableHead>대화지속시간</TableHead>
@@ -143,6 +149,9 @@ export default function SessionTable({
                 <TableCell>{item.teacher_school}</TableCell>
                 <TableCell className="text-muted-foreground">
                   {item.teacher_email}
+                </TableCell>
+                <TableCell className="tabular-nums">
+                  {formatCount(item.turn_count)}
                 </TableCell>
                 <TableCell className="tabular-nums">
                   {formatDateTime(item.started_at)}
