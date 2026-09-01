@@ -58,7 +58,7 @@ export default function SessionDetailModal({ sessionId, onClose }) {
   }, [sessionId])
 
   function handleDownload() {
-    downloadFile(`/api/sessions/${sessionId}/transcript?format=docx`)
+    downloadFile(`/api/sessions/${sessionId}/transcript?format=csv`)
   }
 
   return (
