@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { apiGet, downloadFile } from '../api/client'
 import { Button } from '@/components/ui/button'
+import { Tabs } from '@base-ui/react/tabs'
+import SessionDiagnostics from './SessionDiagnostics'
 import {
   Dialog,
   DialogClose,
@@ -33,6 +35,7 @@ export default function SessionDetailModal({ sessionId, onClose }) {
 
     async function fetchDetail() {
       setLoading(true)
+      setDetail(null)
       setError(null)
       try {
         const data = await apiGet(`/api/sessions/${sessionId}`)
@@ -68,7 +71,7 @@ export default function SessionDetailModal({ sessionId, onClose }) {
         if (!open) onClose()
       }}
     >
-      <DialogContent className="max-h-[85svh] sm:max-w-3xl">
+      <DialogContent className="max-h-[90svh] sm:max-w-3xl">
         <DialogHeader>
           <DialogTitle className="pr-8">
             {detail
@@ -76,7 +79,12 @@ export default function SessionDetailModal({ sessionId, onClose }) {
               : 'Detailed Session Log'}
           </DialogTitle>
         </DialogHeader>
-        <div className="max-h-[55svh] overflow-y-auto">
+        <Tabs.Root key={sessionId} defaultValue="conversation">
+          <Tabs.List aria-label="세션 기록 종류" className="mb-4 flex gap-1 border-b">
+            <Tabs.Tab value="conversation" className="cursor-pointer border-b-2 border-transparent px-3 py-2 text-sm data-active:border-primary data-active:font-semibold">대화 기록</Tabs.Tab>
+            <Tabs.Tab value="diagnostics" className="cursor-pointer border-b-2 border-transparent px-3 py-2 text-sm data-active:border-primary data-active:font-semibold">진단 기록</Tabs.Tab>
+          </Tabs.List>
+          <Tabs.Panel value="conversation" className="max-h-[55svh] overflow-y-auto">
           {loading && (
             <p className="text-sm text-muted-foreground">불러오는 중...</p>
           )}
@@ -109,11 +117,15 @@ export default function SessionDetailModal({ sessionId, onClose }) {
               </TableBody>
             </Table>
           )}
-        </div>
+          </Tabs.Panel>
+          <Tabs.Panel value="diagnostics" className="max-h-[60svh] overflow-y-auto pr-1">
+            <SessionDiagnostics key={sessionId} sessionId={sessionId} />
+          </Tabs.Panel>
+        </Tabs.Root>
         <DialogFooter>
           {detail && (
             <Button type="button" onClick={handleDownload}>
-              다운로드
+              대화 다운로드
             </Button>
           )}
           <DialogClose render={<Button type="button" variant="outline" />}>

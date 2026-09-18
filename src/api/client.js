@@ -8,7 +8,7 @@ async function handleResponse(response) {
     } catch {
       // response body is not JSON, ignore
     }
-    const error = new Error(data?.message || `요청이 실패했습니다 (${response.status})`)
+    const error = new Error(data?.message || data?.error || `요청이 실패했습니다 (${response.status})`)
     error.status = response.status
     error.data = data
     throw error
@@ -19,11 +19,12 @@ async function handleResponse(response) {
   return response.json()
 }
 
-export async function apiGet(path) {
+export async function apiGet(path, { signal } = {}) {
   const response = await fetch(`${BASE}${path}`, {
     method: 'GET',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
+    signal,
   })
   return handleResponse(response)
 }
