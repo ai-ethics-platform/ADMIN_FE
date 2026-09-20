@@ -15,6 +15,7 @@ const actions = {
   create_game: '게임 생성', save_dilemma: '상황·딜레마 저장', header_step: '제작 단계 이동',
   header_preview: '미리보기 전환', header_edit: '편집 전환',
   preview_next: '다음 문단', preview_previous: '이전 문단', preview_paragraph: '미리보기 문단 표시',
+  screen_next: '다음 화면 이동', screen_back: '이전 화면 이동', navigation_save: '이동 전 저장',
 }
 const phases = { opening: '주제', question: '딜레마', flip: '반전', roles: '등장인물', ending: '마무리',
   save_dilemma: '상황 저장', dilemma: '상황 편집' }
@@ -33,8 +34,13 @@ export function diagnosticLabel(event) {
 
 export function diagnosticSummary(event) {
   const d = event.details || {}
+  if (event.kind === 'diagnostic_status' && d.event === 'browser_version') {
+    return browserName(event.user_agent, event.browser_versions)
+  }
   if (event.kind === 'main_unresponsive') return Number.isFinite(d.main_age_ms)
     ? `메인 화면의 상태 신호가 ${(d.main_age_ms / 1000).toFixed(1)}초 동안 없습니다.` : '메인 화면의 상태 신호가 지연되었습니다.'
+  if (d.action === 'navigation_save') return `이동 전 저장 · ${d.event === 'start' ? '시작' :
+    d.event === 'error' ? '예외로 이동 취소' : d.blocked ? '이동 취소' : '완료'}${d.duration_ms != null ? ` · ${d.duration_ms}ms` : ''}`
   if (d.endpoint) return [d.method, d.endpoint, d.status ? `HTTP ${d.status}` : '',
     d.duration_ms != null ? `${d.duration_ms.toLocaleString()}ms` : '', d.code || ''].filter(Boolean).join(' · ')
   if (d.action) return `${actions[d.action] || d.action}${d.blocked ? ' · 대기 상태로 실행되지 않음' : ''}${d.count != null ? ` · ${d.count + 1}번째` : ''}`
@@ -55,11 +61,16 @@ export function diagnosticTime(value) {
   return Number.isNaN(date.getTime()) ? '시각 정보 없음' : formatter.format(date)
 }
 
-export function browserName(ua = '') {
-  for (const [pattern, name] of [[/Edg(?:A|iOS)?\/([\d.]+)/, 'Edge'], [/Chrome\/([\d.]+)/, 'Chrome'],
-    [/Firefox\/([\d.]+)/, 'Firefox'], [/Version\/([\d.]+).*Safari/, 'Safari']]) {
+export function browserName(ua = '', versions = []) {
+  for (const [pattern, name, brand] of [[/Edg(?:A|iOS)?\/([\d.]+)/, 'Edge', 'Microsoft Edge'],
+    [/Chrome\/([\d.]+)/, 'Chrome', 'Google Chrome'], [/Firefox\/([\d.]+)/, 'Firefox'],
+    [/Version\/([\d.]+).*Safari/, 'Safari']]) {
     const match = ua.match(pattern)
-    if (match) return `${name} ${match[1]}`
+    if (!match) continue
+    const fullVersion = brand && versions.find(item => item.brand === brand)?.version
+    if (fullVersion) return `${name} ${fullVersion}`
+    if (brand && /^\d+\.0\.0\.0$/.test(match[1])) return `${name} ${match[1].split('.')[0]} (세부 버전 미수집)`
+    return `${name} ${match[1]}`
   }
   return ua || '브라우저 정보 없음'
 }

@@ -1,0 +1,3200 @@
+{
+  "meta": {
+    "version": 1,
+    "nodeCount": 116,
+    "edgeCount": 254,
+    "languages": [
+      "javascript",
+      "jsx"
+    ],
+    "scopes": [
+      {
+        "prefix": "",
+        "label": "",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "eslint.config.js",
+      "name": "eslint.config.js",
+      "kind": "file",
+      "path": "eslint.config.js",
+      "span": "L1-L34",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "6ea89b7f008172a670aaa8540b110fe2b83ae0b951ac0a748358f2e909867ec6",
+      "chars": 844,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/api/client.js",
+      "name": "client.js",
+      "kind": "file",
+      "path": "src/api/client.js",
+      "span": "L1-L68",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "6994964f3909a64bae649a7d27d9ad6e56517a2ed927cf9959ea023b50f9534b",
+      "chars": 1812,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/api/client.js#apiGet",
+      "name": "apiGet",
+      "kind": "function",
+      "path": "src/api/client.js",
+      "span": "L22-L30",
+      "signature": "async function apiGet(path, { signal } = {})",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "260a3082d5f5b80c269ae736acadbef25ac5e7f81050090553d5cd0d7600e716",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/api/client.js#apiPost",
+      "name": "apiPost",
+      "kind": "function",
+      "path": "src/api/client.js",
+      "span": "L32-L40",
+      "signature": "async function apiPost(path, body)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "fc43571fb2e5a2e3b1220d711e1dffbc1b431d13b7b9c5807799e4a404c5aeb9",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/api/client.js#downloadFile",
+      "name": "downloadFile",
+      "kind": "function",
+      "path": "src/api/client.js",
+      "span": "L42-L67",
+      "signature": "async function downloadFile(path)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "0bd81a9543573deebf940022fdbff340e89b1f61e1bea3b08225f67a4b43d9bd",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/api/client.js#handleResponse",
+      "name": "handleResponse",
+      "kind": "function",
+      "path": "src/api/client.js",
+      "span": "L3-L20",
+      "signature": "async function handleResponse(response)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "386727a3609b81285e1aebe996d111900639b6610f90ba26a8e3cad9829aa84d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/App.jsx",
+      "name": "App.jsx",
+      "kind": "file",
+      "path": "src/App.jsx",
+      "span": "L1-L28",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "bba5b8d93f4c7b92f0cae9a5127e8cbbb3499f04a0a16f9bedd77defa2111ce9",
+      "chars": 649,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/App.jsx#App",
+      "name": "App",
+      "kind": "function",
+      "path": "src/App.jsx",
+      "span": "L7-L25",
+      "signature": "function App()",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "8de1ab9b9c8972a0d166d5a1c6d84c6914d34b84678dec265fd32599521b02a5",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/AuthContext.jsx",
+      "name": "AuthContext.jsx",
+      "kind": "file",
+      "path": "src/auth/AuthContext.jsx",
+      "span": "L1-L42",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f7768b5e16461e8d00fa857e8284f6d358959fd95c69f616e693ac7a217c0b84",
+      "chars": 892,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/AuthContext.jsx#AuthProvider",
+      "name": "AuthProvider",
+      "kind": "function",
+      "path": "src/auth/AuthContext.jsx",
+      "span": "L7-L33",
+      "signature": "function AuthProvider({ children })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "42f7d8f1a7df7780070858022a2cc9009e29ed461aae72cf09339f440a9f6b4c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/AuthContext.jsx#AuthProvider.login",
+      "name": "login",
+      "kind": "function",
+      "path": "src/auth/AuthContext.jsx",
+      "span": "L20-L22",
+      "signature": "function login()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "cf0d7903c10bc653a6ae09a5806648aefc0ef8d937e04c9d436c3b18afd760d8",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/AuthContext.jsx#AuthProvider.logout",
+      "name": "logout",
+      "kind": "function",
+      "path": "src/auth/AuthContext.jsx",
+      "span": "L24-L26",
+      "signature": "function logout()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "75e3bb25deebfe98aa4ba812b1490cd98fbd8ee2f5923859e98b27e0b8e26b43",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/AuthContext.jsx#useAuth",
+      "name": "useAuth",
+      "kind": "function",
+      "path": "src/auth/AuthContext.jsx",
+      "span": "L35-L41",
+      "signature": "function useAuth()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "632ff310f562c8f0913130c84292d5a7a4a31a1f589b1d86805a2e46e08da0a4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/ProtectedRoute.jsx",
+      "name": "ProtectedRoute.jsx",
+      "kind": "file",
+      "path": "src/auth/ProtectedRoute.jsx",
+      "span": "L1-L13",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "0bdb13db6a288e85a9ff436e09124b56850c780cb7a0fdff9d7941ac82d4463a",
+      "chars": 262,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/auth/ProtectedRoute.jsx#ProtectedRoute",
+      "name": "ProtectedRoute",
+      "kind": "function",
+      "path": "src/auth/ProtectedRoute.jsx",
+      "span": "L4-L12",
+      "signature": "function ProtectedRoute({ children })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e082717d339c88ed1d65281e6b3567c25a3e15e1bf25a2636f3b1dac91bd5a51",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ExportBar.jsx",
+      "name": "ExportBar.jsx",
+      "kind": "file",
+      "path": "src/components/ExportBar.jsx",
+      "span": "L1-L31",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "a0b5050772d94606a0c0c3769933b592bb3369a529fd37ef8e5cae615674b8f2",
+      "chars": 935,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ExportBar.jsx#ExportBar",
+      "name": "ExportBar",
+      "kind": "function",
+      "path": "src/components/ExportBar.jsx",
+      "span": "L4-L30",
+      "signature": "function ExportBar({ selectedIds, filterQueryString })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "6c9fe1e9213cd556f6e13dbe68881e17ba579bb775a1375a657d35030864b46a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ExportBar.jsx#ExportBar.handleExport",
+      "name": "handleExport",
+      "kind": "function",
+      "path": "src/components/ExportBar.jsx",
+      "span": "L7-L14",
+      "signature": "function handleExport()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "443e9a096d14f00e7ece14dad50e6297c9cfd7d9e8fc7590d373df3effc57e80",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionDetailModal.jsx",
+      "name": "SessionDetailModal.jsx",
+      "kind": "file",
+      "path": "src/components/SessionDetailModal.jsx",
+      "span": "L1-L139",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "3f9594c2d95be9e1b805fa78bf9b7b0ed12db5934cd35daedd0a89e970bd9eb2",
+      "chars": 4203,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionDetailModal.jsx#SessionDetailModal",
+      "name": "SessionDetailModal",
+      "kind": "function",
+      "path": "src/components/SessionDetailModal.jsx",
+      "span": "L23-L138",
+      "signature": "function SessionDetailModal({ sessionId, onClose })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "268b044c76e3b9733ba00424c3f6f42115d7b8bf70019a4e0e43c6a2d83f8890",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionDetailModal.jsx#SessionDetailModal.fetchDetail",
+      "name": "fetchDetail",
+      "kind": "function",
+      "path": "src/components/SessionDetailModal.jsx",
+      "span": "L36-L54",
+      "signature": "async function fetchDetail()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "8623e262b944d92afee26a37f3a0ec48d64f407e0ac29fd8bf260d9d355b3256",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionDetailModal.jsx#SessionDetailModal.handleDownload",
+      "name": "handleDownload",
+      "kind": "function",
+      "path": "src/components/SessionDetailModal.jsx",
+      "span": "L63-L65",
+      "signature": "function handleDownload()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "5af1f3ae7d31f79ddc3cd480ebba261d5328968656d35edcd770f859d2ade345",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionDiagnostics.jsx",
+      "name": "SessionDiagnostics.jsx",
+      "kind": "file",
+      "path": "src/components/SessionDiagnostics.jsx",
+      "span": "L1-L111",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "115336bd908b15da67da9e12b22dc8464fd868c7ed370cfe2dc12fa3101ad5eb",
+      "chars": 6247,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "name": "SessionDiagnostics",
+      "kind": "function",
+      "path": "src/components/SessionDiagnostics.jsx",
+      "span": "L7-L110",
+      "signature": "function SessionDiagnostics({ sessionId })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e88e5ba9d48da065e5a853808e3a112e518b183fd02d59376c32c386086891e4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionFilters.jsx",
+      "name": "SessionFilters.jsx",
+      "kind": "file",
+      "path": "src/components/SessionFilters.jsx",
+      "span": "L1-L91",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "9cbcbb4e28cd85da2108495300eaaadd87654cffb448257ae73782305016d3f6",
+      "chars": 2679,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionFilters.jsx#SessionFilters",
+      "name": "SessionFilters",
+      "kind": "function",
+      "path": "src/components/SessionFilters.jsx",
+      "span": "L18-L90",
+      "signature": "function SessionFilters({ filters, onFilterChange })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "5f4ea3f6527474623dce7df384cbb4978ceddd9c4192c9b41aff7d5a388f2488",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionFilters.jsx#SessionFilters.handleEndDateChange",
+      "name": "handleEndDateChange",
+      "kind": "function",
+      "path": "src/components/SessionFilters.jsx",
+      "span": "L30-L32",
+      "signature": "function handleEndDateChange(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "38746d661c033c8f7fa62d1772f11ad3ce2b8d4dcb19733a1f8602b5c01c5be1",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionFilters.jsx#SessionFilters.handleSearchChange",
+      "name": "handleSearchChange",
+      "kind": "function",
+      "path": "src/components/SessionFilters.jsx",
+      "span": "L22-L24",
+      "signature": "function handleSearchChange(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "32744e1f6f310bc95f068c94a126a5597ecc204d859c452ce293af976a5540d1",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionFilters.jsx#SessionFilters.handleSortChange",
+      "name": "handleSortChange",
+      "kind": "function",
+      "path": "src/components/SessionFilters.jsx",
+      "span": "L34-L37",
+      "signature": "function handleSortChange(value)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f1caf4eb21acbba85fd576dd83dd69ffb22e5c2e2e1bc80f59373bca306360d5",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionFilters.jsx#SessionFilters.handleStartDateChange",
+      "name": "handleStartDateChange",
+      "kind": "function",
+      "path": "src/components/SessionFilters.jsx",
+      "span": "L26-L28",
+      "signature": "function handleStartDateChange(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "52cfb18d5a7aedadc5c4997c84d59eb41b7e050835e294c7872703e38ad4ebdd",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx",
+      "name": "SessionTable.jsx",
+      "kind": "file",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L1-L205",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "77d657e7b589227348b7fa1f1c8cc5b2ac2b6a047946eba70c9ce6114f25d31e",
+      "chars": 6589,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx#formatCount",
+      "name": "formatCount",
+      "kind": "function",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L25-L28",
+      "signature": "function formatCount(value)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "1fcb38d82dbd54007c232a65363881fe74b6d647bf42a257468b6be32fd87a97",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx#formatDateTime",
+      "name": "formatDateTime",
+      "kind": "function",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L20-L23",
+      "signature": "function formatDateTime(value)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "1d1f106c74f2ba450208c7069aa558d5b310ec49d0321d4e7d55f04f63c3aff2",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx#formatDuration",
+      "name": "formatDuration",
+      "kind": "function",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L30-L37",
+      "signature": "function formatDuration(seconds)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "23caed269a8b2c0a80371ac76f0c5fffddcd3ac12273855496f515d2a12f8296",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx#formatDuration.pad",
+      "name": "pad",
+      "kind": "function",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L32-L32",
+      "signature": "pad = (n)",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "d925a14a155c75a676f406357934119ca9bf4fb58923d430a22e8829553690b4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx#SessionTable",
+      "name": "SessionTable",
+      "kind": "function",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L94-L204",
+      "signature": "function SessionTable({ items, selectedIds, onToggleSelect, onToggleSelectAll, onOpenDetail, page, pageSize, total, onPageChange, })",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "c59018f8c023ef31f7eed598e9fe2d21e48004ca24d8d0204e42965f2fccc40b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/SessionTable.jsx#TablePagination",
+      "name": "TablePagination",
+      "kind": "function",
+      "path": "src/components/SessionTable.jsx",
+      "span": "L39-L92",
+      "signature": "function TablePagination({ page, pageSize, total, onPageChange })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "6a8f37a80d1a74f6fa5aec3da3355ece3aee419d6d1e1dcc8f2e532f02f629bf",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/badge.jsx",
+      "name": "badge.jsx",
+      "kind": "file",
+      "path": "src/components/ui/badge.jsx",
+      "span": "L1-L50",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f36735798e41551712d3a9c4b264164fe679b90711d878e959c663de34593bf7",
+      "chars": 1807,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/badge.jsx#Badge",
+      "name": "Badge",
+      "kind": "function",
+      "path": "src/components/ui/badge.jsx",
+      "span": "L30-L47",
+      "signature": "function Badge({ className, variant = \"default\", render, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "a55a6ab58ee6760ccd0c6188b6181d5bfb2aea57e45b45d9618e1385d4ff459b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/button.jsx",
+      "name": "button.jsx",
+      "kind": "file",
+      "path": "src/components/ui/button.jsx",
+      "span": "L1-L58",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "2540d8088c5fe828914a47b58ff631995ed989d8c27565594c0ce76f871bda42",
+      "chars": 3158,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/button.jsx#Button",
+      "name": "Button",
+      "kind": "function",
+      "path": "src/components/ui/button.jsx",
+      "span": "L43-L55",
+      "signature": "function Button({ className, variant = \"default\", size = \"default\", ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "abf4d9474a68b661b75acc17d9480510a8e058d2d50b47494b8aab1c35701697",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx",
+      "name": "card.jsx",
+      "kind": "file",
+      "path": "src/components/ui/card.jsx",
+      "span": "L1-L115",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "31383722d9d5f59fb506ab3bdffa3410828aa72000d86a9ce83a49c94bfb6bf5",
+      "chars": 2400,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#Card",
+      "name": "Card",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L5-L20",
+      "signature": "function Card({ className, size = \"default\", ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "c1240c843d9e64a9adb8143474eecb6737f3df95f3fe191b0975594987f3f704",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#CardAction",
+      "name": "CardAction",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L64-L77",
+      "signature": "function CardAction({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "e0a9c85fcc0df0361f76d32d356c5aea45309b82fa11484fa63ad6744e1d3e12",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#CardContent",
+      "name": "CardContent",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L79-L89",
+      "signature": "function CardContent({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "da4b8a140b93e9c45d5acde7550c8268a507f0bc606df0c438d16401519c36f2",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#CardDescription",
+      "name": "CardDescription",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L52-L62",
+      "signature": "function CardDescription({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "3e387e47601d7a3906eeb8a03ca6fd7f50e3fa031c004d13e4335c5d40ba2659",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#CardFooter",
+      "name": "CardFooter",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L91-L104",
+      "signature": "function CardFooter({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "12752351b1134d221135055777883c0467f241f0803e33939d25df4442a83576",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#CardHeader",
+      "name": "CardHeader",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L22-L35",
+      "signature": "function CardHeader({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "3401f5215bc9f26e982a4608aab3109929b4017d4d666f5b753384a81c395166",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/card.jsx#CardTitle",
+      "name": "CardTitle",
+      "kind": "function",
+      "path": "src/components/ui/card.jsx",
+      "span": "L37-L50",
+      "signature": "function CardTitle({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "4f10d18e61a9dd19c563f2b5bcc261b9e12092cf021587736eae0257ecc9e7f1",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/checkbox.jsx",
+      "name": "checkbox.jsx",
+      "kind": "file",
+      "path": "src/components/ui/checkbox.jsx",
+      "span": "L1-L30",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "30ba2c97a85216d48744b0914c33ec335cdb6a8a5b08b7a283b4b696478124ab",
+      "chars": 1494,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/checkbox.jsx#Checkbox",
+      "name": "Checkbox",
+      "kind": "function",
+      "path": "src/components/ui/checkbox.jsx",
+      "span": "L8-L27",
+      "signature": "function Checkbox({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "07de5a7490384e2602a886f787fd030f37c6a84a81cfaa2a857fa00af6088015",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx",
+      "name": "dialog.jsx",
+      "kind": "file",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L1-L154",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "7c8e2bd65cf8197fcf50838f5683b584befb79f32571640bd787956dea5cb9fd",
+      "chars": 3581,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#Dialog",
+      "name": "Dialog",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L8-L12",
+      "signature": "function Dialog({ ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "c1894b359a57fff019b19ba8ddeb0f567ad6f1355e94836b06dc8f1e2cb94195",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogClose",
+      "name": "DialogClose",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L26-L30",
+      "signature": "function DialogClose({ ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "d4e55082e783d275bb6aae6ce626a5f8fe9b86505ca594a04e7c188caa363512",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogContent",
+      "name": "DialogContent",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L47-L77",
+      "signature": "function DialogContent({ className, children, showCloseButton = true, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "4137d0fc70e0897af994d7362aa9396624c3f9885f6cbf82b54c0e4954fbec99",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogDescription",
+      "name": "DialogDescription",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L127-L140",
+      "signature": "function DialogDescription({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "04f91a1da07f5a8b9d13fc0fd575e56623cbb551f0fee0469a928ac9c449815c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogFooter",
+      "name": "DialogFooter",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L91-L113",
+      "signature": "function DialogFooter({ className, showCloseButton = false, children, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "cc5a6c4722b567f439718c4f0194609b4e08a1e8ecd2efc5a9e07ecc9955ec8f",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogHeader",
+      "name": "DialogHeader",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L79-L89",
+      "signature": "function DialogHeader({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "f27d46696e0794c1b2f49a5adf3b7363edfc612d17765717b2a61e061687cd89",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogOverlay",
+      "name": "DialogOverlay",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L32-L45",
+      "signature": "function DialogOverlay({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "7a8261cae1ff5462c17fe44cee76bee039118cb38a6fb2734d70d4d9c76a2d0c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogPortal",
+      "name": "DialogPortal",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L20-L24",
+      "signature": "function DialogPortal({ ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "83fd3722146f8f3ea1d59fa1cc3fcd5021508cfde7da14ffaaf455e631c73599",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogTitle",
+      "name": "DialogTitle",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L115-L125",
+      "signature": "function DialogTitle({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "a7ab1733043cfba42b905f467f1609dfe7fc3776be6c0da8ed851036497c8191",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/dialog.jsx#DialogTrigger",
+      "name": "DialogTrigger",
+      "kind": "function",
+      "path": "src/components/ui/dialog.jsx",
+      "span": "L14-L18",
+      "signature": "function DialogTrigger({ ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "931bd3ed885bbc8e8e6c02c87a6f2cc0944612447d6193116225b22002a8e0a7",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/input.jsx",
+      "name": "input.jsx",
+      "kind": "file",
+      "path": "src/components/ui/input.jsx",
+      "span": "L1-L24",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "e003cb97caf55bd80be02f1f4be223491de15ac68bb8cc9d06cac7955b8469c9",
+      "chars": 1012,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/input.jsx#Input",
+      "name": "Input",
+      "kind": "function",
+      "path": "src/components/ui/input.jsx",
+      "span": "L6-L21",
+      "signature": "function Input({ className, type, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "41103d9d0485d16139716f818b3fa412f43d969899719a92d87b9d04b60f2d10",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/label.jsx",
+      "name": "label.jsx",
+      "kind": "file",
+      "path": "src/components/ui/label.jsx",
+      "span": "L1-L21",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "457df1058a84b3fc0927cabcd15ec23c42d89f969232c9a21b78712d7c1b1075",
+      "chars": 474,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/label.jsx#Label",
+      "name": "Label",
+      "kind": "function",
+      "path": "src/components/ui/label.jsx",
+      "span": "L5-L18",
+      "signature": "function Label({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "6a364dcbf0bd5d35c13e785546744cd3fc25e8a530364e89de6ebc231b99600e",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx",
+      "name": "pagination.jsx",
+      "kind": "file",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L1-L123",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "1ef24fafc7e14f04341f0b1227c35b35cf90ead2e0ddd314a0314811b8738d08",
+      "chars": 2435,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#Pagination",
+      "name": "Pagination",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L7-L19",
+      "signature": "function Pagination({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "925fc2f61c2005e52ff7bae5fa477c5d376b63ba1ae71669dd43c7296e41139b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#PaginationContent",
+      "name": "PaginationContent",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L21-L31",
+      "signature": "function PaginationContent({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "8729b68e6bc7613df34913fd8d68c99f1126c66c5445d0054e540fc22470531a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#PaginationEllipsis",
+      "name": "PaginationEllipsis",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L95-L112",
+      "signature": "function PaginationEllipsis({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "ac23fa29af84146b065f19182427358a62079d5dc6da7c39b56369a54dcc97e8",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#PaginationItem",
+      "name": "PaginationItem",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L33-L37",
+      "signature": "function PaginationItem({ ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "e7b13a171ad0993694d9fd8f9ad24e088dcd20ae81573377090648bde272ce24",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#PaginationLink",
+      "name": "PaginationLink",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L39-L59",
+      "signature": "function PaginationLink({ className, isActive, size = \"icon\", ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "4dced27145b8bcc1553925cbde1bd1bbf9bc3925c26583559c752c58c7ad47fd",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#PaginationNext",
+      "name": "PaginationNext",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L78-L93",
+      "signature": "function PaginationNext({ className, text = \"Next\", ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "a885c402c8c3229617d8cbb139f4c95ff13a8df1358310d6d148162101210b84",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/pagination.jsx#PaginationPrevious",
+      "name": "PaginationPrevious",
+      "kind": "function",
+      "path": "src/components/ui/pagination.jsx",
+      "span": "L61-L76",
+      "signature": "function PaginationPrevious({ className, text = \"Previous\", ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "750fee0f9a0dc1dbdb02d7aeadbba0752c210bb74ed6b66324d4da60660cc1ec",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx",
+      "name": "select.jsx",
+      "kind": "file",
+      "path": "src/components/ui/select.jsx",
+      "span": "L1-L192",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "26408870a4f67ca3e6ec44e8a173e6e87cdf783044d8ed8539ebe782a46d2889",
+      "chars": 6146,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectContent",
+      "name": "SelectContent",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L59-L93",
+      "signature": "function SelectContent({ className, children, side = \"bottom\", sideOffset = 4, align = \"center\", alignOffset = 0, alignItemWithTrigger = true, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "78ee927379980a29f73406374b242820632d8563439f5e3c1195b25798b44db8",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectGroup",
+      "name": "SelectGroup",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L11-L21",
+      "signature": "function SelectGroup({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "43ae47ddbc6f3b80cebf80ecdf9fa2dfa6c8f92c2108608cc0b57daf3e25d21f",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectItem",
+      "name": "SelectItem",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L107-L132",
+      "signature": "function SelectItem({ className, children, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "92baae6554658c1c8a1a97c07f87cc625909e6050125f81640ef041224443780",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectLabel",
+      "name": "SelectLabel",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L95-L105",
+      "signature": "function SelectLabel({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "2eadcc894dbc0f2cbed8715d5bcd856996a43a234294891be78253a913575499",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectScrollDownButton",
+      "name": "SelectScrollDownButton",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L163-L178",
+      "signature": "function SelectScrollDownButton({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "3058318981de9f4f523b3f8656637241e0156473c3248067316a36dd626ca123",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectScrollUpButton",
+      "name": "SelectScrollUpButton",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L146-L161",
+      "signature": "function SelectScrollUpButton({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "b9c09eb3cd49efada2eab39eba5c6c48648314e169dd6b3bbdf562369467a3f4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectSeparator",
+      "name": "SelectSeparator",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L134-L144",
+      "signature": "function SelectSeparator({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "710718868950ea2e420a2abb5c456ab00eb4fdbd28a266deda953b68587a9c2b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectTrigger",
+      "name": "SelectTrigger",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L35-L57",
+      "signature": "function SelectTrigger({ className, size = \"default\", children, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "f09e9c468e698c4f478f46d3e1890526f128464860daa2e170aa4b40882d0a52",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/select.jsx#SelectValue",
+      "name": "SelectValue",
+      "kind": "function",
+      "path": "src/components/ui/select.jsx",
+      "span": "L23-L33",
+      "signature": "function SelectValue({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "b730e3372b71eaf44383f57206c2fcf9b0b3f2a08544db2962a35ce97a44d9c6",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx",
+      "name": "table.jsx",
+      "kind": "file",
+      "path": "src/components/ui/table.jsx",
+      "span": "L1-L122",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "9d97a5afb2ec91d88e1d55b6909ad1cacb8e2a5ecf7d36e6f19b1d7ad2934886",
+      "chars": 2108,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#Table",
+      "name": "Table",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L5-L17",
+      "signature": "function Table({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "7c787b11987bdf5f830b7456667583aabec547c018c3231bc15d691e252de146",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableBody",
+      "name": "TableBody",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L31-L41",
+      "signature": "function TableBody({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "f77f0682ef4310706175249933fec5d0833e4252e8c04b51f3e4e77d938e4baa",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableCaption",
+      "name": "TableCaption",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L100-L110",
+      "signature": "function TableCaption({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "fa260b7b86dd307f275d0837a096317f04474cb3f1fc8bf92cce2c908fbb5dbb",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableCell",
+      "name": "TableCell",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L85-L98",
+      "signature": "function TableCell({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "2d1333457e630c7bb6ab70d57aef1fcbc3bb8cc89808f9f6b1a64776147e0336",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableFooter",
+      "name": "TableFooter",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L43-L53",
+      "signature": "function TableFooter({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "56326fae5f894d57d2d9242c262c2b20f1ba42d8fd24c8ff48b9bfd425b90ad4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableHead",
+      "name": "TableHead",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L70-L83",
+      "signature": "function TableHead({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "bd481b359c5d99441984e5ebe1ddc49e0e061ca318a7beca5ea97428c94b047a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableHeader",
+      "name": "TableHeader",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L19-L29",
+      "signature": "function TableHeader({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "263bab29308fde73a9e076b5327b72bdbc31a71b543bc00332e1db04c612bffd",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/components/ui/table.jsx#TableRow",
+      "name": "TableRow",
+      "kind": "function",
+      "path": "src/components/ui/table.jsx",
+      "span": "L55-L68",
+      "signature": "function TableRow({ className, ...props })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "b5171531afcfbd0bec87de07db3d21ad555cbcc0f8ecd0176c7d2f8b32a2417d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/hooks/useSessions.js",
+      "name": "useSessions.js",
+      "kind": "file",
+      "path": "src/hooks/useSessions.js",
+      "span": "L1-L64",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "122a28164e1478c189cdf8f1ed159c1911b95d7cfdb48c5ba1f1f4f162862203",
+      "chars": 1633,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/hooks/useSessions.js#useSessions",
+      "name": "useSessions",
+      "kind": "function",
+      "path": "src/hooks/useSessions.js",
+      "span": "L4-L63",
+      "signature": "function useSessions({ search = '', startDate = '', endDate = '', sortBy = 'started_at', sortDir = 'desc', page = 1, pageSize = 20, } = {})",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "cfa80284d7318747216121c0bb4c65a92586091a7bef4d4471509ce60d0e165c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/hooks/useSessions.js#useSessions.fetchSessions",
+      "name": "fetchSessions",
+      "kind": "function",
+      "path": "src/hooks/useSessions.js",
+      "span": "L22-L49",
+      "signature": "async function fetchSessions()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "d946b1d0697b277bb7432330606b8ae886dfb7501768e48734b81bb9867bf86a",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js",
+      "name": "diagnostics.js",
+      "kind": "file",
+      "path": "src/lib/diagnostics.js",
+      "span": "L1-L77",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "fdbb4cd167e06a172edb08e077128605db1847c033d000677c2d7028d04f4f58",
+      "chars": 4298,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js#browserName",
+      "name": "browserName",
+      "kind": "function",
+      "path": "src/lib/diagnostics.js",
+      "span": "L64-L76",
+      "signature": "function browserName(ua = '', versions = [])",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "05ac4e22aec3a0fd29c198e524265f0abfcf36fa0deb63b1d844526c0be25a3c",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js#diagnosticLabel",
+      "name": "diagnosticLabel",
+      "kind": "function",
+      "path": "src/lib/diagnostics.js",
+      "span": "L30-L33",
+      "signature": "function diagnosticLabel(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "52dbef139ddc5392996dfebfe78f4b6499e54be6cb09d083475c060fa0d07165",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js#diagnosticLocation",
+      "name": "diagnosticLocation",
+      "kind": "function",
+      "path": "src/lib/diagnostics.js",
+      "span": "L54-L57",
+      "signature": "function diagnosticLocation(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "5af0fc0076e8dd81cca17d4a12eb780a7b106e139502be8f2631d8354f66cc50",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js#diagnosticSummary",
+      "name": "diagnosticSummary",
+      "kind": "function",
+      "path": "src/lib/diagnostics.js",
+      "span": "L35-L52",
+      "signature": "function diagnosticSummary(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "4afe7d74796f4dc09c16f330bdfc5cfcfd5c9207b6d529df58130b54eb155c28",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js#diagnosticTime",
+      "name": "diagnosticTime",
+      "kind": "function",
+      "path": "src/lib/diagnostics.js",
+      "span": "L59-L62",
+      "signature": "function diagnosticTime(value)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "5cbc5022016cf306f07ec97349260e95175ddc4a2a4c6f38c7e45b8cdf8fd006",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/diagnostics.js#isDiagnosticError",
+      "name": "isDiagnosticError",
+      "kind": "function",
+      "path": "src/lib/diagnostics.js",
+      "span": "L26-L28",
+      "signature": "function isDiagnosticError(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "f4ffe5e590d3588292e1beb1c46f3ed8061998019f3b2d6cc78df7ebeba0bf82",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/utils.js",
+      "name": "utils.js",
+      "kind": "file",
+      "path": "src/lib/utils.js",
+      "span": "L1-L7",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "5ba0ae526d768600bbfb4a4d345c47f6208cb941adbf456de80804a4cf938350",
+      "chars": 137,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/lib/utils.js#cn",
+      "name": "cn",
+      "kind": "function",
+      "path": "src/lib/utils.js",
+      "span": "L4-L6",
+      "signature": "function cn(...inputs)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "91ab8c48a008e3a9a58280c77e1d9f3650ba80c731a23fd2f8d01b2bd8739372",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/main.jsx",
+      "name": "main.jsx",
+      "kind": "file",
+      "path": "src/main.jsx",
+      "span": "L1-L11",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "4b4b864dbe45253425d0c925337180ec07e204295179f80f59551216f466f618",
+      "chars": 229,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Dashboard.jsx",
+      "name": "Dashboard.jsx",
+      "kind": "file",
+      "path": "src/pages/Dashboard.jsx",
+      "span": "L1-L102",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "93644bf4a8944ec18e5ac3996a45e5e9a9417d244e455fef82f077ffcbe387da",
+      "chars": 2931,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Dashboard.jsx#Dashboard",
+      "name": "Dashboard",
+      "kind": "function",
+      "path": "src/pages/Dashboard.jsx",
+      "span": "L18-L101",
+      "signature": "function Dashboard()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "881970168ef7ef5f011a384caa00d8efc3f1c2fd9589f1b8e91ffdba88de0dc5",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Dashboard.jsx#Dashboard.handleFilterChange",
+      "name": "handleFilterChange",
+      "kind": "function",
+      "path": "src/pages/Dashboard.jsx",
+      "span": "L30-L33",
+      "signature": "function handleFilterChange(partial)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "26db540763694bc096781998e3156d8338fa21f45e26c4bbd0fe7172d98cc06d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Dashboard.jsx#Dashboard.handleToggleSelect",
+      "name": "handleToggleSelect",
+      "kind": "function",
+      "path": "src/pages/Dashboard.jsx",
+      "span": "L35-L45",
+      "signature": "function handleToggleSelect(id)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "2da0badf2c346500979b7fb9bc4b87bce6c419590e9d60acf9962cf5c3baa9f4",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Dashboard.jsx#Dashboard.handleToggleSelectAll",
+      "name": "handleToggleSelectAll",
+      "kind": "function",
+      "path": "src/pages/Dashboard.jsx",
+      "span": "L47-L57",
+      "signature": "function handleToggleSelectAll(checked)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "4c751985c4d68e5c8e6725c499379992542fb42754a7e62add0ade74e7658c00",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Login.jsx",
+      "name": "Login.jsx",
+      "kind": "file",
+      "path": "src/pages/Login.jsx",
+      "span": "L1-L72",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "73a8f335e78a4fe5ac3989e4fe21379efeff5a68971be13b547644323df8dcfb",
+      "chars": 1997,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Login.jsx#Login",
+      "name": "Login",
+      "kind": "function",
+      "path": "src/pages/Login.jsx",
+      "span": "L16-L71",
+      "signature": "function Login()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "3d002d1918bbf3c0c90556d8fa9c1f20904467e6cbc4e4fa02a884b433a2055d",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/Login.jsx#Login.handleSubmit",
+      "name": "handleSubmit",
+      "kind": "function",
+      "path": "src/pages/Login.jsx",
+      "span": "L23-L36",
+      "signature": "async function handleSubmit(event)",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "277a72c3b8bde39ae87e752bd4f62992dbc5edd465a6fed830c6e5ab173d051f",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "tests/diagnostics.test.mjs",
+      "name": "diagnostics.test.mjs",
+      "kind": "file",
+      "path": "tests/diagnostics.test.mjs",
+      "span": "L1-L35",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "0a7ce90c40b4e49a3f8ba96f9aad4d89e516d3ac7957a579e256f90ef1de78df",
+      "chars": 2739,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "vite.config.js",
+      "name": "vite.config.js",
+      "kind": "file",
+      "path": "vite.config.js",
+      "span": "L1-L15",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "07b3a6d6ac34c00bb5f1ede75b8ccf69945edd17b5f30000f38d1226db1aa767",
+      "chars": 360,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "eslint.config.js",
+      "target": "@eslint/js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "eslint.config.js",
+      "target": "eslint-plugin-react-hooks",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "eslint.config.js",
+      "target": "eslint-plugin-react-refresh",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "eslint.config.js",
+      "target": "globals",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/api/client.js",
+      "target": "src/api/client.js#apiGet",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/api/client.js",
+      "target": "src/api/client.js#apiPost",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/api/client.js",
+      "target": "src/api/client.js#downloadFile",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/api/client.js",
+      "target": "src/api/client.js#handleResponse",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/api/client.js#apiGet",
+      "target": "src/api/client.js#handleResponse",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/api/client.js#apiPost",
+      "target": "src/api/client.js#handleResponse",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "src/App.jsx#App",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "react-router-dom",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "src/auth/AuthContext.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "src/auth/ProtectedRoute.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "src/pages/Dashboard.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "src/pages/Login.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/AuthContext.jsx",
+      "target": "src/auth/AuthContext.jsx#AuthProvider",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/AuthContext.jsx",
+      "target": "src/auth/AuthContext.jsx#useAuth",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/AuthContext.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/AuthContext.jsx#AuthProvider",
+      "target": "src/auth/AuthContext.jsx#AuthProvider.login",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/AuthContext.jsx#AuthProvider",
+      "target": "src/auth/AuthContext.jsx#AuthProvider.logout",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/ProtectedRoute.jsx",
+      "target": "src/auth/ProtectedRoute.jsx#ProtectedRoute",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/ProtectedRoute.jsx",
+      "target": "react-router-dom",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/ProtectedRoute.jsx",
+      "target": "src/auth/AuthContext.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/auth/ProtectedRoute.jsx#ProtectedRoute",
+      "target": "src/auth/AuthContext.jsx#useAuth",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ExportBar.jsx",
+      "target": "src/components/ExportBar.jsx#ExportBar",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ExportBar.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ExportBar.jsx",
+      "target": "src/api/client.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ExportBar.jsx#ExportBar",
+      "target": "src/components/ExportBar.jsx#ExportBar.handleExport",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ExportBar.jsx#ExportBar.handleExport",
+      "target": "src/api/client.js#downloadFile",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "src/components/SessionDetailModal.jsx#SessionDetailModal",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "@/components/ui/dialog",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "@/components/ui/table",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "@base-ui/react/tabs",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "src/api/client.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx",
+      "target": "src/components/SessionDiagnostics.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx#SessionDetailModal",
+      "target": "src/components/SessionDetailModal.jsx#SessionDetailModal.fetchDetail",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx#SessionDetailModal",
+      "target": "src/components/SessionDetailModal.jsx#SessionDetailModal.fetchDetail",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx#SessionDetailModal",
+      "target": "src/components/SessionDetailModal.jsx#SessionDetailModal.handleDownload",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx#SessionDetailModal.fetchDetail",
+      "target": "src/api/client.js#apiGet",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDetailModal.jsx#SessionDetailModal.handleDownload",
+      "target": "src/api/client.js#downloadFile",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx",
+      "target": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx",
+      "target": "@/components/ui/badge",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx",
+      "target": "src/api/client.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx",
+      "target": "src/lib/diagnostics.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/api/client.js#apiGet",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#browserName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#diagnosticLabel",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#diagnosticLocation",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#diagnosticSummary",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#diagnosticTime",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#isDiagnosticError",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/SessionDiagnostics.jsx#SessionDiagnostics",
+      "target": "src/lib/diagnostics.js#isDiagnosticError",
+      "relation": "references",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx",
+      "target": "src/components/SessionFilters.jsx#SessionFilters",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx",
+      "target": "@/components/ui/input",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx",
+      "target": "@/components/ui/label",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx",
+      "target": "@/components/ui/select",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx#SessionFilters",
+      "target": "src/components/SessionFilters.jsx#SessionFilters.handleEndDateChange",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx#SessionFilters",
+      "target": "src/components/SessionFilters.jsx#SessionFilters.handleSearchChange",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx#SessionFilters",
+      "target": "src/components/SessionFilters.jsx#SessionFilters.handleSortChange",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionFilters.jsx#SessionFilters",
+      "target": "src/components/SessionFilters.jsx#SessionFilters.handleStartDateChange",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "src/components/SessionTable.jsx#formatCount",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "src/components/SessionTable.jsx#formatDateTime",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "src/components/SessionTable.jsx#formatDuration",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "src/components/SessionTable.jsx#SessionTable",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "src/components/SessionTable.jsx#TablePagination",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "@/components/ui/checkbox",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "@/components/ui/pagination",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx",
+      "target": "@/components/ui/table",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx#formatDuration",
+      "target": "src/components/SessionTable.jsx#formatDuration.pad",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx#formatDuration",
+      "target": "src/components/SessionTable.jsx#formatDuration.pad",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx#SessionTable",
+      "target": "src/components/SessionTable.jsx#formatCount",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx#SessionTable",
+      "target": "src/components/SessionTable.jsx#formatDateTime",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/SessionTable.jsx#SessionTable",
+      "target": "src/components/SessionTable.jsx#formatDuration",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/badge.jsx",
+      "target": "src/components/ui/badge.jsx#Badge",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/badge.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/badge.jsx",
+      "target": "@base-ui/react/merge-props",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/badge.jsx",
+      "target": "@base-ui/react/use-render",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/badge.jsx",
+      "target": "class-variance-authority",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/badge.jsx#Badge",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/button.jsx",
+      "target": "src/components/ui/button.jsx#Button",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/button.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/button.jsx",
+      "target": "@base-ui/react/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/button.jsx",
+      "target": "class-variance-authority",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/button.jsx#Button",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#Card",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#CardAction",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#CardContent",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#CardDescription",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#CardFooter",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#CardHeader",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "src/components/ui/card.jsx#CardTitle",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/card.jsx#Card",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx#CardAction",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx#CardContent",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx#CardDescription",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx#CardFooter",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx#CardHeader",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/card.jsx#CardTitle",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/checkbox.jsx",
+      "target": "src/components/ui/checkbox.jsx#Checkbox",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/checkbox.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/checkbox.jsx",
+      "target": "@base-ui/react/checkbox",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/checkbox.jsx",
+      "target": "lucide-react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/checkbox.jsx#Checkbox",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#Dialog",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogClose",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogContent",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogDescription",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogFooter",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogHeader",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogOverlay",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogPortal",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogTitle",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "src/components/ui/dialog.jsx#DialogTrigger",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "@base-ui/react/dialog",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "lucide-react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx#DialogContent",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx#DialogDescription",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx#DialogFooter",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx#DialogHeader",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx#DialogOverlay",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/dialog.jsx#DialogTitle",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/input.jsx",
+      "target": "src/components/ui/input.jsx#Input",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/input.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/input.jsx",
+      "target": "@base-ui/react/input",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/input.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/input.jsx#Input",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/label.jsx",
+      "target": "src/components/ui/label.jsx#Label",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/label.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/label.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/label.jsx#Label",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#Pagination",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#PaginationContent",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#PaginationEllipsis",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#PaginationItem",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#PaginationLink",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#PaginationNext",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "src/components/ui/pagination.jsx#PaginationPrevious",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "lucide-react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx#Pagination",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx#PaginationContent",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx#PaginationEllipsis",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx#PaginationLink",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx#PaginationNext",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/pagination.jsx#PaginationPrevious",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectContent",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectGroup",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectItem",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectLabel",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectScrollDownButton",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectScrollUpButton",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectSeparator",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectTrigger",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "src/components/ui/select.jsx#SelectValue",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "@base-ui/react/select",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "lucide-react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectContent",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectGroup",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectItem",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectLabel",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectScrollDownButton",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectScrollUpButton",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectSeparator",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectTrigger",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/select.jsx#SelectValue",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#Table",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableBody",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableCaption",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableCell",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableFooter",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableHead",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableHeader",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "src/components/ui/table.jsx#TableRow",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "@/lib/utils",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/components/ui/table.jsx#Table",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableBody",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableCaption",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableCell",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableFooter",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableHead",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableHeader",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/components/ui/table.jsx#TableRow",
+      "target": "src/lib/utils.js#cn",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/hooks/useSessions.js",
+      "target": "src/hooks/useSessions.js#useSessions",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/hooks/useSessions.js",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/hooks/useSessions.js",
+      "target": "src/api/client.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/hooks/useSessions.js#useSessions",
+      "target": "src/hooks/useSessions.js#useSessions.fetchSessions",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/hooks/useSessions.js#useSessions",
+      "target": "src/hooks/useSessions.js#useSessions.fetchSessions",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/hooks/useSessions.js#useSessions.fetchSessions",
+      "target": "src/api/client.js#apiGet",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/lib/diagnostics.js",
+      "target": "src/lib/diagnostics.js#browserName",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/diagnostics.js",
+      "target": "src/lib/diagnostics.js#diagnosticLabel",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/diagnostics.js",
+      "target": "src/lib/diagnostics.js#diagnosticLocation",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/diagnostics.js",
+      "target": "src/lib/diagnostics.js#diagnosticSummary",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/diagnostics.js",
+      "target": "src/lib/diagnostics.js#diagnosticTime",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/diagnostics.js",
+      "target": "src/lib/diagnostics.js#isDiagnosticError",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/diagnostics.js#diagnosticSummary",
+      "target": "src/lib/diagnostics.js#browserName",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/utils.js",
+      "target": "src/lib/utils.js#cn",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/utils.js",
+      "target": "clsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/lib/utils.js",
+      "target": "tailwind-merge",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/main.jsx",
+      "target": "./index.css",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/main.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/main.jsx",
+      "target": "react-dom/client",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/main.jsx",
+      "target": "src/App.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "src/pages/Dashboard.jsx#Dashboard",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "src/components/ExportBar.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "src/components/SessionDetailModal.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "src/components/SessionFilters.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "src/components/SessionTable.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
+      "target": "src/hooks/useSessions.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx#Dashboard",
+      "target": "src/hooks/useSessions.js#useSessions",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx#Dashboard",
+      "target": "src/pages/Dashboard.jsx#Dashboard.handleFilterChange",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx#Dashboard",
+      "target": "src/pages/Dashboard.jsx#Dashboard.handleToggleSelect",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx#Dashboard",
+      "target": "src/pages/Dashboard.jsx#Dashboard.handleToggleSelectAll",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "src/pages/Login.jsx#Login",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "@/components/ui/card",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "@/components/ui/input",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "@/components/ui/label",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "react-router-dom",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "src/api/client.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx",
+      "target": "src/auth/AuthContext.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx#Login",
+      "target": "src/auth/AuthContext.jsx#useAuth",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/pages/Login.jsx#Login",
+      "target": "src/pages/Login.jsx#Login.handleSubmit",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Login.jsx#Login.handleSubmit",
+      "target": "src/api/client.js#apiPost",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/pages/Login.jsx#Login.handleSubmit",
+      "target": "src/auth/AuthContext.jsx#AuthProvider.login",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "src/lib/diagnostics.js#browserName",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "src/lib/diagnostics.js#diagnosticLocation",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "src/lib/diagnostics.js#diagnosticSummary",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "src/lib/diagnostics.js#diagnosticTime",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "src/lib/diagnostics.js#isDiagnosticError",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "node:assert/strict",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "node:test",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "tests/diagnostics.test.mjs",
+      "target": "src/lib/diagnostics.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "vite.config.js",
+      "target": "@tailwindcss/vite",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "vite.config.js",
+      "target": "@vitejs/plugin-react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "vite.config.js",
+      "target": "node:url",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "vite.config.js",
+      "target": "vite",
+      "relation": "imports",
+      "confidence": "extracted"
+    }
+  ]
+}

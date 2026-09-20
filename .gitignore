@@ -27,3 +27,6 @@ dist-ssr
 .env.local
 .vercel
 .env*
+
+# Generated Graft cache; graph cards are versioned.
+/graft/.cache/

@@ -39,7 +39,7 @@ export default function SessionDiagnostics({ sessionId }) {
 
   const items = result?.items || []
   const latest = items[0]
-  const browsers = [...new Set(items.map(item => browserName(item.user_agent)))]
+  const browsers = [...new Set(items.map(item => browserName(item.user_agent, item.browser_versions)))]
   const issueCount = items.filter(isDiagnosticError).length
 
   return (
@@ -95,6 +95,7 @@ export default function SessionDiagnostics({ sessionId }) {
               <summary className="w-fit cursor-pointer text-muted-foreground">기술 정보</summary>
               <pre className="mt-2 max-h-64 overflow-auto whitespace-pre-wrap break-all rounded bg-muted/60 p-3">{JSON.stringify({
                 event: event.kind, browser: event.user_agent, build: event.build_id,
+                browser_versions: event.browser_versions, browser_version_status: event.browser_version_status,
                 session: event.session_id, game: event.game_code, trace: event.trace_id, id: event.id,
                 browser_time: event.at, received_at: event.received_at, ...event.details,
               }, null, 2)}</pre>
