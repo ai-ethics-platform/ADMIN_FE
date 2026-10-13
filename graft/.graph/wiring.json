@@ -1606,8 +1606,8 @@
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "08590909dd276af9cf3a9867fc6dfa5c82e22082390f9772b4cc813d540bfd3b",
-      "chars": 5207,
+      "body_hash": "2a85793c3d1528f6e2470ddad8793bb791ba9fb4067b2a7c1346fbdb19bcabcf",
+      "chars": 5260,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1621,7 +1621,7 @@
       "signature": "function GameDiagnostics()",
       "exported": true,
       "origin": "ast",
-      "body_hash": "04596b64b0fd61ceb25264c88e80be8e0d16d1e9cb0b78dda4e1dea1e476ae0b",
+      "body_hash": "ee5fe7611abaa90dd605fb3a108a523d88fe7c849678f7895fa9bb65cbe89055",
       "summary_state": "pending",
       "summary": null,
       "crux": null

@@ -36,7 +36,7 @@ export default function GameDiagnostics() {
   return <main className="mx-auto max-w-7xl space-y-5 p-6">
     <Link to="/" className="text-sm underline">세션 로그로 돌아가기</Link>
     <h1 className="text-2xl font-semibold">게임 접속 진단</h1>
-    <p className="text-sm text-muted-foreground">백엔드가 실제 받은 요청입니다. 페이지와 저장 상태는 브라우저가 보고한 값이며, 방 게임과 준비 요청 코드는 서버에서 확인한 값입니다. 시각은 한국 시간입니다. 계정 식별자를 누르면 다른 게임의 기록도 함께 조회합니다. 화면 전환 후 URL 코드가 없어지는 것은 정상일 수 있습니다. 적용 이전 기록은 소급 수집되지 않습니다.</p>
+    <p className="text-sm text-muted-foreground">백엔드가 실제 받은 요청입니다. 페이지와 저장 상태는 요청을 보내기 직전의 브라우저 보고값이며, 방 게임과 준비 요청 코드는 서버에서 확인한 값입니다. 게임 조회 요청에서 요청 전 로드 코드가 비어 있는 것은 정상입니다. 시각은 한국 시간입니다. 계정 식별자를 누르면 다른 게임의 기록도 함께 조회합니다. 화면 전환 후 URL 코드가 없어지는 것은 정상일 수 있습니다. 적용 이전 기록은 소급 수집되지 않습니다.</p>
     <form className="flex flex-wrap items-end gap-3" onSubmit={e => { e.preventDefault(); setQuery({ ...input, page: 1, revision: query.revision + 1 }) }}>
       {[['game_code', '게임 코드'], ['room_code', '방 코드'], ['account_ref', '계정 식별자'], ['date', '날짜']].map(([key, label]) => <label key={key} className="text-sm">{label}<input className="mt-1 block rounded border p-2" type={key === 'date' ? 'date' : 'text'} maxLength={key === 'account_ref' ? 16 : 20} value={input[key]} onChange={e => setInput(prev => ({ ...prev, [key]: e.target.value.trim() }))} /></label>)}
       <Button type="submit" disabled={loading}>조회</Button>
@@ -49,7 +49,7 @@ export default function GameDiagnostics() {
         <td className="whitespace-nowrap p-2">{time.format(new Date(row.at))}</td>
         <td className="p-2"><button type="button" className="underline" disabled={!row.account_ref} onClick={() => filterAccount(row.account_ref)}>{row.account_ref || '계정 미확인'}</button><div>역할 {row.role_id || '-'}</div></td>
         <td className="p-2">{row.path || '페이지 미수신'}<div className="text-xs text-muted-foreground">{row.context_status === 'received' ? '상태 수신' : row.context_status === 'missing' ? '이전 클라이언트 / 상태 미수신' : '잘못된 상태 형식'}</div></td>
-        <td className="p-2">{row.context_status !== 'received' ? '브라우저 상태 확인 불가' : <><div>URL: {row.url_code || '없음'}</div><div>저장: {row.game_code || '없음'}</div><div>로드: {row.loaded_code || '없음'}</div><div>{row.storage_state === 'unavailable' ? '저장소 읽기·해석 실패' : ''}</div></>}<div>방 게임: {row.room_game_code || '-'}</div>{row.submitted_game_code_recorded && <div>준비 요청 코드: {row.submitted_game_code || '없음'}</div>}</td>
+        <td className="p-2">{row.context_status !== 'received' ? '브라우저 상태 확인 불가' : <><div>URL: {row.url_code || '없음'}</div><div>저장: {row.game_code || '없음'}</div><div>요청 전 로드: {row.loaded_code || '없음'}</div><div>{row.storage_state === 'unavailable' ? '저장소 읽기·해석 실패' : ''}</div></>}<div>방 게임: {row.room_game_code || '-'}</div>{row.submitted_game_code_recorded && <div>준비 요청 코드: {row.submitted_game_code || '없음'}</div>}</td>
         <td className="p-2">{row.room_code || '-'}</td>
         <td className="p-2"><div>{row.method} {row.endpoint}</div><div className={row.status >= 400 ? 'text-destructive' : ''}>HTTP {row.status}</div><details><summary className="cursor-pointer text-xs">상세</summary><pre className="max-w-lg overflow-auto text-xs">{JSON.stringify(row, null, 2)}</pre></details></td>
       </tr>)}
