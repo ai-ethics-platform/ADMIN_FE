@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useSessions } from '../hooks/useSessions'
 import SessionFilters from '../components/SessionFilters'
 import SessionTable from '../components/SessionTable'
@@ -70,6 +71,7 @@ export default function Dashboard() {
         <h1 className="font-heading text-2xl font-semibold tracking-tight">
           세션 로그
         </h1>
+        <Link to="/game-diagnostics" className="w-fit text-sm underline">게임 접속 진단 보기</Link>
         <SessionFilters filters={filters} onFilterChange={handleFilterChange} />
         <ExportBar selectedIds={selectedIds} filterQueryString={filterQueryString} />
         {loading && (

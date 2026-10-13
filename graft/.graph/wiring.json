@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": 1,
-    "nodeCount": 116,
-    "edgeCount": 254,
+    "nodeCount": 119,
+    "edgeCount": 264,
     "languages": [
       "javascript",
       "jsx"
@@ -109,12 +109,12 @@
       "name": "App.jsx",
       "kind": "file",
       "path": "src/App.jsx",
-      "span": "L1-L28",
+      "span": "L1-L30",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "bba5b8d93f4c7b92f0cae9a5127e8cbbb3499f04a0a16f9bedd77defa2111ce9",
-      "chars": 649,
+      "body_hash": "817f54da2eb78052f05d54c3a6bf9b5357213014e301c6d37771ee505c151210",
+      "chars": 811,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -124,11 +124,11 @@
       "name": "App",
       "kind": "function",
       "path": "src/App.jsx",
-      "span": "L7-L25",
+      "span": "L8-L27",
       "signature": "function App()",
       "exported": false,
       "origin": "ast",
-      "body_hash": "8de1ab9b9c8972a0d166d5a1c6d84c6914d34b84678dec265fd32599521b02a5",
+      "body_hash": "9f325b22a0d9e37434ebfde6ed4a5649cf4c2faadeaaf92029a82a2c51224fa9",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1531,12 +1531,12 @@
       "name": "Dashboard.jsx",
       "kind": "file",
       "path": "src/pages/Dashboard.jsx",
-      "span": "L1-L102",
+      "span": "L1-L104",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "93644bf4a8944ec18e5ac3996a45e5e9a9417d244e455fef82f077ffcbe387da",
-      "chars": 2931,
+      "body_hash": "9c838faa79a087a3b067af44dd5c3f55ac891e263555d19706183d00ca30c610",
+      "chars": 3063,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1546,11 +1546,11 @@
       "name": "Dashboard",
       "kind": "function",
       "path": "src/pages/Dashboard.jsx",
-      "span": "L18-L101",
+      "span": "L19-L103",
       "signature": "function Dashboard()",
       "exported": true,
       "origin": "ast",
-      "body_hash": "881970168ef7ef5f011a384caa00d8efc3f1c2fd9589f1b8e91ffdba88de0dc5",
+      "body_hash": "694b80a2e5ee27711bffa49356dd1697a2636537ea0a18522b0c5085ab44742b",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1560,7 +1560,7 @@
       "name": "handleFilterChange",
       "kind": "function",
       "path": "src/pages/Dashboard.jsx",
-      "span": "L30-L33",
+      "span": "L31-L34",
       "signature": "function handleFilterChange(partial)",
       "exported": true,
       "origin": "ast",
@@ -1574,7 +1574,7 @@
       "name": "handleToggleSelect",
       "kind": "function",
       "path": "src/pages/Dashboard.jsx",
-      "span": "L35-L45",
+      "span": "L36-L46",
       "signature": "function handleToggleSelect(id)",
       "exported": true,
       "origin": "ast",
@@ -1588,11 +1588,54 @@
       "name": "handleToggleSelectAll",
       "kind": "function",
       "path": "src/pages/Dashboard.jsx",
-      "span": "L47-L57",
+      "span": "L48-L58",
       "signature": "function handleToggleSelectAll(checked)",
       "exported": true,
       "origin": "ast",
       "body_hash": "4c751985c4d68e5c8e6725c499379992542fb42754a7e62add0ade74e7658c00",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/GameDiagnostics.jsx",
+      "name": "GameDiagnostics.jsx",
+      "kind": "file",
+      "path": "src/pages/GameDiagnostics.jsx",
+      "span": "L1-L61",
+      "signature": null,
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "08590909dd276af9cf3a9867fc6dfa5c82e22082390f9772b4cc813d540bfd3b",
+      "chars": 5207,
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "name": "GameDiagnostics",
+      "kind": "function",
+      "path": "src/pages/GameDiagnostics.jsx",
+      "span": "L9-L60",
+      "signature": "function GameDiagnostics()",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "04596b64b0fd61ceb25264c88e80be8e0d16d1e9cb0b78dda4e1dea1e476ae0b",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterAccount",
+      "name": "filterAccount",
+      "kind": "function",
+      "path": "src/pages/GameDiagnostics.jsx",
+      "span": "L32-L35",
+      "signature": "filterAccount = account_ref",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "ebe4d32780cd12229632f067f5273f633589f18cb5b0fd6a3649e8f0f8384e98",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1759,6 +1802,12 @@
     {
       "source": "src/App.jsx",
       "target": "src/pages/Dashboard.jsx",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/App.jsx",
+      "target": "src/pages/GameDiagnostics.jsx",
       "relation": "imports",
       "confidence": "extracted"
     },
@@ -2994,6 +3043,12 @@
     },
     {
       "source": "src/pages/Dashboard.jsx",
+      "target": "react-router-dom",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/Dashboard.jsx",
       "target": "src/components/ExportBar.jsx",
       "relation": "imports",
       "confidence": "extracted"
@@ -3043,6 +3098,54 @@
     {
       "source": "src/pages/Dashboard.jsx#Dashboard",
       "target": "src/pages/Dashboard.jsx#Dashboard.handleToggleSelectAll",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx",
+      "target": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx",
+      "target": "@/components/ui/button",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx",
+      "target": "react-router-dom",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx",
+      "target": "src/api/client.js",
+      "relation": "imports",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "target": "src/api/client.js#apiGet",
+      "relation": "calls",
+      "confidence": "inferred"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "target": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterAccount",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "target": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterAccount",
       "relation": "contains",
       "confidence": "extracted"
     },

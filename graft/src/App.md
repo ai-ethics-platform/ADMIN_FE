@@ -1,3 +1,3 @@
 # src/App.jsx
 
-- App · function · L7-L25 — function App()
+- App · function · L8-L27 — function App()
