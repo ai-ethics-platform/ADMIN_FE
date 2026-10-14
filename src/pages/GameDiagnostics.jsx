@@ -5,6 +5,13 @@ import { Button } from '@/components/ui/button'
 
 const time = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })
 const initial = { game_code: '', room_code: '', account_ref: '', date: '' }
+const actions = {
+  '/auth/login': '로그인', '/auth/login-json': '로그인',
+  '/custom-games/{code}': '커스텀 게임 조회',
+  '/rooms/create/public': '공개 방 생성', '/rooms/create/private': '비공개 방 생성',
+  '/rooms/join/code': '방 참여', '/rooms/join/{room_id}': '방 참여',
+  '/rooms/ready': '준비 상태 변경', '/rooms/page-arrival': '게임 페이지 도착',
+}
 
 export default function GameDiagnostics() {
   const [input, setInput] = useState(initial)
@@ -36,6 +43,7 @@ export default function GameDiagnostics() {
   return <main className="mx-auto max-w-7xl space-y-5 p-6">
     <Link to="/" className="text-sm underline">세션 로그로 돌아가기</Link>
     <h1 className="text-2xl font-semibold">게임 접속 진단</h1>
+    <p className="text-sm">게임 코드(예: q16pyciln1)는 스토리를, 6자리 방 코드는 함께 플레이하는 방을 구분합니다. 같은 게임으로 여러 방을 만들 수 있습니다. 방 코드로 조회하면 생성·참여·준비 요청을 함께 확인할 수 있습니다.</p>
     <p className="text-sm text-muted-foreground">백엔드가 실제 받은 요청입니다. 페이지와 저장 상태는 요청을 보내기 직전의 브라우저 보고값이며, 방 게임과 준비 요청 코드는 서버에서 확인한 값입니다. 게임 조회 요청에서 요청 전 로드 코드가 비어 있는 것은 정상입니다. 시각은 한국 시간입니다. 계정 식별자를 누르면 다른 게임의 기록도 함께 조회합니다. 화면 전환 후 URL 코드가 없어지는 것은 정상일 수 있습니다. 적용 이전 기록은 소급 수집되지 않습니다.</p>
     <form className="flex flex-wrap items-end gap-3" onSubmit={e => { e.preventDefault(); setQuery({ ...input, page: 1, revision: query.revision + 1 }) }}>
       {[['game_code', '게임 코드'], ['room_code', '방 코드'], ['account_ref', '계정 식별자'], ['date', '날짜']].map(([key, label]) => <label key={key} className="text-sm">{label}<input className="mt-1 block rounded border p-2" type={key === 'date' ? 'date' : 'text'} maxLength={key === 'account_ref' ? 16 : 20} value={input[key]} onChange={e => setInput(prev => ({ ...prev, [key]: e.target.value.trim() }))} /></label>)}
@@ -44,14 +52,14 @@ export default function GameDiagnostics() {
     {loading && <p role="status">불러오는 중...</p>}
     {error && <p role="alert" className="text-destructive">{error}</p>}
     <p className="text-sm">총 {result?.total || 0}건</p>
-    <div className="overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr>{['시각', '계정 / 역할', '페이지', '게임 상태', '방', '요청 / 응답'].map(s => <th key={s} className="border-b p-2">{s}</th>)}</tr></thead><tbody>
+    <div className="overflow-x-auto"><table className="w-full text-left text-sm"><thead><tr>{['시각', '계정 / 역할', '페이지', '게임 상태', '방 코드 (6자리)', '동작 / 응답'].map(s => <th key={s} className="border-b p-2">{s}</th>)}</tr></thead><tbody>
       {result?.items?.map(row => <tr key={row.request_id} className="border-b align-top">
         <td className="whitespace-nowrap p-2">{time.format(new Date(row.at))}</td>
         <td className="p-2"><button type="button" className="underline" disabled={!row.account_ref} onClick={() => filterAccount(row.account_ref)}>{row.account_ref || '계정 미확인'}</button><div>역할 {row.role_id || '-'}</div></td>
         <td className="p-2">{row.path || '페이지 미수신'}<div className="text-xs text-muted-foreground">{row.context_status === 'received' ? '상태 수신' : row.context_status === 'missing' ? '이전 클라이언트 / 상태 미수신' : '잘못된 상태 형식'}</div></td>
-        <td className="p-2">{row.context_status !== 'received' ? '브라우저 상태 확인 불가' : <><div>URL: {row.url_code || '없음'}</div><div>저장: {row.game_code || '없음'}</div><div>요청 전 로드: {row.loaded_code || '없음'}</div><div>{row.storage_state === 'unavailable' ? '저장소 읽기·해석 실패' : ''}</div></>}<div>방 게임: {row.room_game_code || '-'}</div>{row.submitted_game_code_recorded && <div>준비 요청 코드: {row.submitted_game_code || '없음'}</div>}</td>
+        <td className="p-2">{row.context_status !== 'received' ? '브라우저 상태 확인 불가' : <><div>URL: {row.url_code || '없음'}</div><div>저장: {row.game_code || '없음'}</div><div>요청 전 로드: {row.loaded_code || '없음'}</div><div>{row.storage_state === 'unavailable' ? '저장소 읽기·해석 실패' : ''}</div></>}<div>연결 게임 코드: {row.room_game_code || '-'}</div>{row.submitted_game_code_recorded && <div>요청 게임 코드: {row.submitted_game_code || '없음'}</div>}</td>
         <td className="p-2">{row.room_code || '-'}</td>
-        <td className="p-2"><div>{row.method} {row.endpoint}</div><div className={row.status >= 400 ? 'text-destructive' : ''}>HTTP {row.status}</div><details><summary className="cursor-pointer text-xs">상세</summary><pre className="max-w-lg overflow-auto text-xs">{JSON.stringify(row, null, 2)}</pre></details></td>
+        <td className="p-2"><div className="font-medium">{actions[row.endpoint] || 'API 요청'}</div><div className="text-xs">{row.method} {row.endpoint}</div><div className={row.status >= 400 ? 'text-destructive' : ''}>HTTP {row.status}</div><details><summary className="cursor-pointer text-xs">상세</summary><pre className="max-w-lg overflow-auto text-xs">{JSON.stringify(row, null, 2)}</pre></details></td>
       </tr>)}
     </tbody></table></div>
     {!loading && !error && result && !result.items.length && <p>수집된 기록이 없습니다.</p>}
