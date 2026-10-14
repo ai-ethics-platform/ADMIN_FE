@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": 1,
-    "nodeCount": 119,
-    "edgeCount": 264,
+    "nodeCount": 121,
+    "edgeCount": 267,
     "languages": [
       "javascript",
       "jsx"
@@ -1602,12 +1602,12 @@
       "name": "GameDiagnostics.jsx",
       "kind": "file",
       "path": "src/pages/GameDiagnostics.jsx",
-      "span": "L1-L69",
+      "span": "L1-L122",
       "signature": null,
       "exported": true,
       "origin": "ast",
-      "body_hash": "e926c0429fea165e119c65e47a02dd4f87f31d88e69f6ff91371e1765683bf5d",
-      "chars": 5828,
+      "body_hash": "2c75ac348255f75c8d9ff0ad44a925a2f7ea33a2fb6ebd151c455f6cea69a533",
+      "chars": 10188,
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1617,11 +1617,11 @@
       "name": "GameDiagnostics",
       "kind": "function",
       "path": "src/pages/GameDiagnostics.jsx",
-      "span": "L16-L68",
+      "span": "L58-L121",
       "signature": "function GameDiagnostics()",
       "exported": true,
       "origin": "ast",
-      "body_hash": "8eb0d52302c8cadd3fdc7505c870af814b8c7fd52de6b9ef1595cd7f4c648ff9",
+      "body_hash": "faea7b82309de59a6a7d4a0aa143400d792267fa30abf413f4d800225236fb1d",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -1631,11 +1631,39 @@
       "name": "filterAccount",
       "kind": "function",
       "path": "src/pages/GameDiagnostics.jsx",
-      "span": "L39-L42",
+      "span": "L81-L84",
       "signature": "filterAccount = account_ref",
       "exported": true,
       "origin": "ast",
       "body_hash": "ebe4d32780cd12229632f067f5273f633589f18cb5b0fd6a3649e8f0f8384e98",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterMessage",
+      "name": "filterMessage",
+      "kind": "function",
+      "path": "src/pages/GameDiagnostics.jsx",
+      "span": "L85-L88",
+      "signature": "filterMessage = message_id",
+      "exported": true,
+      "origin": "ast",
+      "body_hash": "df295f41a3aa82a2aca4bccf74f541dfe0278f801a2315817fe3ed7846ce2156",
+      "summary_state": "pending",
+      "summary": null,
+      "crux": null
+    },
+    {
+      "id": "src/pages/GameDiagnostics.jsx#ScreenComparison",
+      "name": "ScreenComparison",
+      "kind": "function",
+      "path": "src/pages/GameDiagnostics.jsx",
+      "span": "L26-L56",
+      "signature": "function ScreenComparison({ rows })",
+      "exported": false,
+      "origin": "ast",
+      "body_hash": "f94d27723c9a2463473cb2b4903db0bbcce7f852fcb53460a02b8a5037a518f7",
       "summary_state": "pending",
       "summary": null,
       "crux": null
@@ -3109,6 +3137,12 @@
     },
     {
       "source": "src/pages/GameDiagnostics.jsx",
+      "target": "src/pages/GameDiagnostics.jsx#ScreenComparison",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx",
       "target": "@/components/ui/button",
       "relation": "imports",
       "confidence": "extracted"
@@ -3145,7 +3179,19 @@
     },
     {
       "source": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "target": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterMessage",
+      "relation": "calls",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
       "target": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterAccount",
+      "relation": "contains",
+      "confidence": "extracted"
+    },
+    {
+      "source": "src/pages/GameDiagnostics.jsx#GameDiagnostics",
+      "target": "src/pages/GameDiagnostics.jsx#GameDiagnostics.filterMessage",
       "relation": "contains",
       "confidence": "extracted"
     },
